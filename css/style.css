@@ -1,0 +1,247 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-size: 1em;
+  color: #6e6f72;
+}
+
+.mm-panel {
+  background-color: #e8e8e8;
+}
+
+.mm-navbar__title {
+  background: #726a52;
+}
+
+.mm-navbar__title span {
+  color: white;
+}
+
+.mm-listitem__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.mm-btn {
+  background: #726a52;
+}
+
+header {
+  background: url("../image/background_header.png");
+}
+
+header .header-menu {
+  padding: 2.9em 0;
+}
+
+header .header-menu .header-logo {
+  float: left;
+}
+
+header .header-menu .header-logo img {
+  width: 9.8em;
+  margin-left: 2.1em;
+}
+
+header .header-menu .menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header-menu .menu-button span {
+  color: white;
+  padding-right: 1em;
+}
+
+header .header-menu .menu-button a {
+  position: relative;
+  height: 20px;
+  width: 28px;
+}
+
+header .header-menu .menu-button a .line_top {
+  height: 2px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+}
+
+header .header-menu .menu-button a .line_mid {
+  height: 2px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  top: 13px;
+}
+
+header .header-menu .menu-button a .line_bot {
+  height: 2px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  bottom: -4px;
+}
+
+header .header-content {
+  margin-top: 7em;
+  text-align: center;
+}
+
+header .header-content h1 {
+  font-size: 4.69em;
+  letter-spacing: -3px;
+  font-weight: bold;
+  color: white;
+}
+
+header .header-content h1 span {
+  color: #f7600e;
+}
+
+header .header-content p {
+  color: #fff;
+  font-size: 1.6em;
+  padding-top: 4px;
+}
+
+header .header-content .header-content-button {
+  margin-top: 4.8em;
+}
+
+header .header-content .header-content-button a:first-child {
+  background-color: #f7600e;
+  color: #fff;
+  padding: 0.9em 4.6em;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+header .header-content .header-content-button a:last-child {
+  color: #fff;
+  padding: 0.9em 3.5em;
+  border-radius: 5px;
+  border: 1px solid #666a70;
+}
+
+header .header-scrolldown {
+  padding: 13em 0 3em 0;
+  text-align: center;
+}
+
+header .header-scrolldown img {
+  width: 34px;
+}
+
+main .services {
+  padding: 6.5em 0;
+}
+
+main .services .services-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 3em;
+}
+
+main .services .services-item .item-image {
+  border: 1px solid #c5c7ca;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 151px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 151px;
+}
+
+main .services .services-item .item-image img {
+  width: 3.5em;
+}
+
+main .services .services-item .width-fixed img {
+  width: 2.2em;
+}
+
+main .services .services-item .item-content {
+  margin-top: 1.6em;
+}
+
+main .services .services-item .item-content h4 {
+  font-weight: 600;
+  font-size: 1em;
+  color: #3b434c;
+}
+
+main .services .services-item .item-content p {
+  margin-top: 1.5em;
+  font-size: .9em;
+  color: #6c7279;
+  line-height: 25px;
+}
+
+/* @media */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
