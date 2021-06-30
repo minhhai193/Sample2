@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,39 +13,29 @@
       rel="stylesheet"
     />
 
+    <!-- MMenu-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/mmenu-js/8.5.23/mmenu.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.23/mmenu.js"></script>
 
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
     <!-- Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
-    <title>AXIT</title>
+    <title>We Design Things</title>
     <link rel="SHORTCUT ICON" href="image/logo.png" />
   </head>
   <body>
     <header>
-      <!-- Menu Mobile -->
-      <!-- <nav class="menu-mobile">
-        <ul>
-          <li>
-            <span>Features</span>
-            <ul>
-              <li><a href="">Service</a></li>
-              <li><a href="">Service</a></li>
-              <li><a href="">Service</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav> -->
-
       <div class="container">
         <section class="header-menu">
           <div class="header-logo">
@@ -52,7 +43,7 @@
           </div>
           <div class="menu-button">
             <span>Menu</span>
-            <a href=".menu-mobile">
+            <a href="#menu">
               <div class="line_top"></div>
               <div class="line_mid"></div>
               <div class="line_bot"></div>
@@ -72,16 +63,38 @@
           </div>
         </section>
         <section class="header-scrolldown">
-          <a href=""><img src="image/button_scrolldown.png" alt="" /></a>
+          <button onclick="scrollDown();">
+            <img src="image/button_scrolldown.png" alt="" />
+          </button>
         </section>
       </div>
     </header>
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+      <!-- The menu -->
+      <nav id="menu">
+        <ul>
+          <li>
+            <span>Features</span>
+            <ul>
+              <li><a href="">Service</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Service</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <section class="services">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image">
                   <img src="image/print_icon.png" alt="" />
@@ -95,7 +108,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image">
                   <img src="image/web_icon.png" alt="" />
@@ -109,7 +122,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image width-fixed">
                   <img src="image/app_icon.png" alt="" />
@@ -123,7 +136,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image width-fixed">
                   <img src="image/logo_icon.png" alt="" />
@@ -160,85 +173,80 @@
           <div class="title">
             <h2>OUR <span>WORKS</span></h2>
             <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat .
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              <br />
+              laboris nisi ut aliquip ex ea commodo consequat .
             </p>
           </div>
           <section class="our-works-list">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <article class="item">
                   <img src="image/ourwork_icon1.png" alt="" />
                   <div class="item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute ir
                     </p>
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <article class="item">
-                  <img src="image/ourwork_icon1.png" alt="" />
+                  <img src="image/ourwork_icon2.png" alt="" />
                   <div class="item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute ir
                     </p>
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <article class="item">
-                  <img src="image/ourwork_icon1.png" alt="" />
+                  <img src="image/ourwork_icon3.png" alt="" />
                   <div class="item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute ir
                     </p>
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <article class="item">
-                  <img src="image/ourwork_icon1.png" alt="" />
+                  <img src="image/ourwork_icon4.png" alt="" />
                   <div class="item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute ir
                     </p>
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <article class="item">
-                  <img src="image/ourwork_icon1.png" alt="" />
+                  <img src="image/ourwork_icon5.png" alt="" />
                   <div class="item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute ir
                     </p>
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-6">
                 <article class="item">
-                  <img src="image/ourwork_icon1.png" alt="" />
+                  <img src="image/ourwork_icon6.png" alt="" />
                   <div class="item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute ir
                     </p>
                     <a href="">SHOW PROJECT</a>
                   </div>
@@ -254,79 +262,591 @@
 
       <section class="members">
         <div class="container">
-          <article class="members-item">
-            <div class="item-image">
-              <img src="image/image_member1.png" alt="" />
-            </div>
-            <div class="item-content">
-              <p>
-                These guys are incredible! I get my project in 10 days and it
-                was awesome! Very good service! Highly recommended!
-              </p>
-              <p>John Smith</p>
-            </div>
-          </article>
+          <div class="owl-carousel owl-theme">
+            <article class="members-item">
+              <div class="item-image">
+                <img src="image/icon_members.png" alt="" />
+              </div>
+              <div class="item-content">
+                <i>
+                  These guys are incredible! I get my project in 10 days and it
+                  was awesome!
+                </i>
+                <i>Very good service! Highly recommended!</i>
+                <br />
+                <p>John Smith</p>
+              </div>
+            </article>
+            <article class="members-item">
+              <div class="item-image">
+                <img src="image/icon_members.png" alt="" />
+              </div>
+              <div class="item-content">
+                <i>
+                  These guys are incredible! I get my project in 10 days and it
+                  was awesome!
+                </i>
+                <i>Very good service! Highly recommended!</i>
+                <br />
+                <p>John Smith</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="our-team">
-        <div class="title">
-          <h2>OUR <span>WORKS</span></h2>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat .
-          </p>
+        <div class="container">
+          <div class="title">
+            <h2>OUR <span>TEAM</span></h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+            <p>
+              nisi ut aliquip ex ea ea ea ea commodo consequat exercitation.
+            </p>
+          </div>
+          <div class="our-team-slide">
+            <div class="owl-carousel owl-theme">
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member1.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>CATHERINA GAIL</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member2.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>HARVEY RUBE</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member3.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>JANET PRIS</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member4.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>KEVIN WARD</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member1.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>CATHERINA GAIL</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member2.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>HARVEY RUBE</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member3.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>JANET PRIS</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member4.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>KEVIN WARD</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member1.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>CATHERINA GAIL</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member2.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>HARVEY RUBE</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member3.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>JANET PRIS</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member4.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>KEVIN WARD</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member1.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>CATHERINA GAIL</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member2.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>HARVEY RUBE</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member3.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>JANET PRIS</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+              <article class="our-team-item">
+                <div class="item-image">
+                  <img src="image/image_member4.png" alt="" />
+                </div>
+                <div class="item-content">
+                  <h4>KEVIN WARD</h4>
+                  <div class="content-social">
+                    <ul>
+                      <li>
+                        <a href=""
+                          ><img src="./image/facebook_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/twitter_icon.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href=""
+                          ><img src="./image/google_icon.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <i>
+                    These guys are incredible! I get my project in 10 days and
+                  </i>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="registration">
-        <div class="title">
-          <h2>OUR <span>WORKS</span></h2>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat .
-          </p>
-        </div>
-        <div class="registration-form">
-          <form action="">
-            <input type="text" placeholder="Your Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-            ></textarea>
-            <input type="submit" value="HIRE US" />
-          </form>
-          <div class="registration-social">
-            <ul>
-              <li>
-                <a href=""><img src="image/facebook_icon.png" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="image/twitter_icon.png" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="image/google_icon.png" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="image/dribbble_icon.png" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="image/behance_icon.png" alt="" /></a>
-              </li>
-            </ul>
+        <div class="container">
+          <div class="title">
+            <h2>SAY <span>HELLO</span></h2>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+            <p>nisi ut aliquip ex ea commodo consequat .</p>
+          </div>
+          <div class="registration-form">
+            <form action="">
+              <div class="form-group">
+                <input type="text" placeholder="Your Email" />
+                <input type="text" placeholder="Subject" />
+              </div>
+
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="7"
+                placeholder="Your Message"
+              ></textarea>
+              <input type="submit" value="HIRE US" />
+            </form>
+            <div class="registration-social">
+              <ul>
+                <li>
+                  <a href=""><img src="image/facebook_icon.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="image/twitter_icon.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="image/google_icon.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="image/dribbble_icon.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="image/behance_icon.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>@ 2015 COPYRIGHT STUDIO</p>
-      <p>DESIGNED BY <strong>SYMU</strong><span>.</span>CO</p>
+      <div class="container">
+        <p>@ 2015 COPYRIGHT DESIGN STUDIO</p>
+        <p>DESIGNED BY <strong>SYMU</strong><span>.</span>CO</p>
+      </div>
     </footer>
   </body>
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
   <script src="js/main.js"></script>
 </html>
