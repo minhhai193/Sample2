@@ -13,162 +13,176 @@
       rel="stylesheet"
     />
 
-    <!-- MMenu-->
+    <!-- Slider -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/mmenu-js/8.5.23/mmenu.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.23/mmenu.js"></script>
-
-    <!-- Slider -->
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
     <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style2.css" />
     <title>We Design Things</title>
     <link rel="SHORTCUT ICON" href="image/logo.png" />
   </head>
   <body>
-    <header>
+    <header class="header-menu">
       <div class="container">
-        <section class="header-menu">
-          <div class="header-logo">
-            <a href="#"><img src="image/logo.png" alt="" /></a>
+        <div class="header-logo">
+          <h1>
+            <img src="image/logo.png" alt="Web-Design-Things" class="logo" />
+          </h1>
+        </div>
+        <div class="open-menu">
+          <span>Menu</span>
+          <div class="open-menu-icon">
+            <div class="line_top"></div>
+            <div class="line_mid"></div>
+            <div class="line_bot"></div>
           </div>
-          <div class="menu-button">
-            <span>Menu</span>
-            <a href="#menu">
-              <div class="line_top"></div>
-              <div class="line_mid"></div>
-              <div class="line_bot"></div>
-            </a>
-          </div>
-        </section>
-        <section class="header-content">
-          <h1>WE DESIGN <span>THINGS</span></h1>
-          <p>
-            Lorem ipsum dolor sit ameton proideiatis unde omnis
-            <br />
-            iste natus error sit voluptatem accusa Nemo enim ipsam voluptatem
-            quia
-          </p>
-          <div class="header-content-button">
-            <a href="">HIRE US</a><a href="">OUR WORKS</a>
-          </div>
-        </section>
-        <section class="header-scrolldown">
-          <button onclick="scrollDown();">
-            <img src="image/button_scrolldown.png" alt="" />
-          </button>
-        </section>
+        </div>
       </div>
-    </header>
-    <!-- Menu Mobile -->
-    <div class="menu-mobile">
-      <!-- The menu -->
-      <nav id="menu">
-        <ul>
-          <li>
-            <span>Features</span>
-            <ul>
-              <li><a href="">Service</a></li>
-              <li><a href="">Service</a></li>
-              <li><a href="">Service</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
+
+      <nav class="menu-mobile">
+        <ul class="group-list">
+          <li class="list-item"><a href="#">About</a></li>
+          <li class="list-item"><a href="#">Pricing</a></li>
+          <li class="list-item"><a href="#">Reviews</a></li>
+          <li class="list-item"><a href="#">Contact</a></li>
         </ul>
+        <a href="javascript:void(0)" class="close-menu">X</a>
       </nav>
-    </div>
+    </header>
 
     <main>
-      <section class="services">
+      <section class="section-header">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
+          <div class="header-title">
+            <h2 class="main-title">WE DESIGN <span>THINGS</span></h2>
+            <p>
+              Lorem ipsum dolor sit ameton proideiatis unde omnis
+              <br />
+              iste natus error sit voluptatem accusa Nemo enim ipsam voluptatem
+              quia
+            </p>
+          </div>
+          <div class="header-button">
+            <a href="">HIRE US</a><a href="">OUR WORKS</a>
+          </div>
+
+          <div class="header-scrolldown">
+            <button onclick="scrollDown();">
+              <img src="image/button_scrolldown.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-services">
+        <div class="container">
+          <ul class="row">
+            <li class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image">
                   <img src="image/print_icon.png" alt="" />
                 </div>
                 <div class="item-content">
-                  <h4>PRINT DESIGN</h4>
+                  <h2 class="content-title">PRINT DESIGN</h2>
                   <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est.
                   </p>
                 </div>
               </article>
-            </div>
-            <div class="col-lg-3 col-sm-6">
+            </li>
+            <li class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image">
                   <img src="image/web_icon.png" alt="" />
                 </div>
                 <div class="item-content">
-                  <h4>WEB DESIGN</h4>
+                  <h2 class="content-title">WEB DESIGN</h2>
                   <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est.
                   </p>
                 </div>
               </article>
-            </div>
-            <div class="col-lg-3 col-sm-6">
+            </li>
+            <li class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image width-fixed">
                   <img src="image/app_icon.png" alt="" />
                 </div>
                 <div class="item-content">
-                  <h4>APP DESIGN</h4>
+                  <h2 class="content-title">APP DESIGN</h2>
                   <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est.
                   </p>
                 </div>
               </article>
-            </div>
-            <div class="col-lg-3 col-sm-6">
+            </li>
+            <li class="col-lg-3 col-sm-6">
               <article class="services-item">
                 <div class="item-image width-fixed">
                   <img src="image/logo_icon.png" alt="" />
                 </div>
                 <div class="item-content">
-                  <h4>LOGO DESIGN</h4>
+                  <h2 class="content-title">LOGO DESIGN</h2>
                   <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est.
                   </p>
                 </div>
               </article>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
 
-      <section class="banner">
+      <div class="section-banner">
         <div class="container">
           <div class="banner-form">
-            <form action="">
+            <form action="index2.html">
               <input
                 type="text"
                 placeholder="Enter Your email address for newsletter"
+                class="form-input"
               />
-              <input type="submit" value="SUBSCRIBE" />
+              <input type="submit" value="SUBSCRIBE" class="form-submit" />
             </form>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="our-works">
+      <section class="section-our-works">
         <div class="container">
           <div class="title">
             <h2>OUR <span>WORKS</span></h2>
@@ -178,12 +192,16 @@
               laboris nisi ut aliquip ex ea commodo consequat .
             </p>
           </div>
-          <section class="our-works-list">
-            <div class="row">
-              <div class="col-md-4 col-sm-6">
-                <article class="item">
-                  <img src="image/ourwork_icon1.png" alt="" />
-                  <div class="item-hover">
+          <div class="our-works-list">
+            <ul class="row">
+              <li class="col-lg-4 col-sm-6">
+                <article class="list-item">
+                  <img
+                    src="image/ourwork_icon1.png"
+                    alt=""
+                    class="list-item-background"
+                  />
+                  <div class="list-item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -191,11 +209,15 @@
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <article class="item">
-                  <img src="image/ourwork_icon2.png" alt="" />
-                  <div class="item-hover">
+              </li>
+              <li class="col-lg-4 col-sm-6">
+                <article class="list-item">
+                  <img
+                    src="image/ourwork_icon2.png"
+                    alt=""
+                    class="list-item-background"
+                  />
+                  <div class="list-item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -203,11 +225,15 @@
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <article class="item">
-                  <img src="image/ourwork_icon3.png" alt="" />
-                  <div class="item-hover">
+              </li>
+              <li class="col-lg-4 col-sm-6">
+                <article class="list-item">
+                  <img
+                    src="image/ourwork_icon3.png"
+                    alt=""
+                    class="list-item-background"
+                  />
+                  <div class="list-item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -215,11 +241,15 @@
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <article class="item">
-                  <img src="image/ourwork_icon4.png" alt="" />
-                  <div class="item-hover">
+              </li>
+              <li class="col-lg-4 col-sm-6">
+                <article class="list-item">
+                  <img
+                    src="image/ourwork_icon4.png"
+                    alt=""
+                    class="list-item-background"
+                  />
+                  <div class="list-item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -227,11 +257,15 @@
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <article class="item">
-                  <img src="image/ourwork_icon5.png" alt="" />
-                  <div class="item-hover">
+              </li>
+              <li class="col-lg-4 col-sm-6">
+                <article class="list-item">
+                  <img
+                    src="image/ourwork_icon5.png"
+                    alt=""
+                    class="list-item-background"
+                  />
+                  <div class="list-item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -239,11 +273,15 @@
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <article class="item">
-                  <img src="image/ourwork_icon6.png" alt="" />
-                  <div class="item-hover">
+              </li>
+              <li class="col-lg-4 col-sm-6">
+                <article class="list-item">
+                  <img
+                    src="image/ourwork_icon6.png"
+                    alt=""
+                    class="list-item-background"
+                  />
+                  <div class="list-item-hover">
                     <h3>ABAZOO WEBSITE</h3>
                     <p>
                       Quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -251,19 +289,19 @@
                     <a href="">SHOW PROJECT</a>
                   </div>
                 </article>
-              </div>
-            </div>
-          </section>
+              </li>
+            </ul>
+          </div>
           <div class="our-works-button">
             <a href="">SHOW MORE</a>
           </div>
         </div>
       </section>
 
-      <section class="members">
+      <div class="section-members">
         <div class="container">
           <div class="owl-carousel owl-theme">
-            <article class="members-item">
+            <div class="members-item">
               <div class="item-image">
                 <img src="image/icon_members.png" alt="" />
               </div>
@@ -276,8 +314,8 @@
                 <br />
                 <p>John Smith</p>
               </div>
-            </article>
-            <article class="members-item">
+            </div>
+            <div class="members-item">
               <div class="item-image">
                 <img src="image/icon_members.png" alt="" />
               </div>
@@ -290,12 +328,12 @@
                 <br />
                 <p>John Smith</p>
               </div>
-            </article>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="our-team">
+      <section class="section-our-team">
         <div class="container">
           <div class="title">
             <h2>OUR <span>TEAM</span></h2>
@@ -305,8 +343,8 @@
             </p>
           </div>
           <div class="our-team-slide">
-            <div class="owl-carousel owl-theme">
-              <article class="our-team-item">
+            <ul class="owl-carousel owl-theme">
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member1.png" alt="" />
                 </div>
@@ -335,8 +373,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member2.png" alt="" />
                 </div>
@@ -365,8 +403,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member3.png" alt="" />
                 </div>
@@ -395,8 +433,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member4.png" alt="" />
                 </div>
@@ -425,8 +463,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member1.png" alt="" />
                 </div>
@@ -455,8 +493,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member2.png" alt="" />
                 </div>
@@ -485,8 +523,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member3.png" alt="" />
                 </div>
@@ -515,8 +553,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member4.png" alt="" />
                 </div>
@@ -545,8 +583,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member1.png" alt="" />
                 </div>
@@ -575,8 +613,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member2.png" alt="" />
                 </div>
@@ -605,8 +643,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member3.png" alt="" />
                 </div>
@@ -635,8 +673,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member4.png" alt="" />
                 </div>
@@ -665,8 +703,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member1.png" alt="" />
                 </div>
@@ -695,8 +733,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member2.png" alt="" />
                 </div>
@@ -725,8 +763,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member3.png" alt="" />
                 </div>
@@ -755,8 +793,8 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-              <article class="our-team-item">
+              </li>
+              <li class="our-team-item">
                 <div class="item-image">
                   <img src="image/image_member4.png" alt="" />
                 </div>
@@ -785,52 +823,59 @@
                     These guys are incredible! I get my project in 10 days and
                   </i>
                 </div>
-              </article>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="registration">
+      <section class="section-registration">
         <div class="container">
           <div class="title">
-            <h2>SAY <span>HELLO</span></h2>
+            <h2 class="main-title">SAY <span>HELLO</span></h2>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
             <p>nisi ut aliquip ex ea commodo consequat .</p>
           </div>
           <div class="registration-form">
-            <form action="">
+            <form action="index2.html">
               <div class="form-group">
-                <input type="text" placeholder="Your Email" />
-                <input type="text" placeholder="Subject" />
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  class="form-group-item"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="form-group-item"
+                />
               </div>
 
               <textarea
-                name=""
-                id=""
                 cols="30"
                 rows="7"
                 placeholder="Your Message"
+                class="text-area"
               ></textarea>
-              <input type="submit" value="HIRE US" />
+              <input type="submit" value="HIRE US" class="form-submit" />
             </form>
             <div class="registration-social">
-              <ul>
-                <li>
+              <ul class="social-form-group">
+                <li class="form-group-item">
                   <a href=""><img src="image/facebook_icon.png" alt="" /></a>
                 </li>
-                <li>
+                <li class="form-group-item">
                   <a href=""><img src="image/twitter_icon.png" alt="" /></a>
                 </li>
-                <li>
+                <li class="form-group-item">
                   <a href=""><img src="image/google_icon.png" alt="" /></a>
                 </li>
-                <li>
+                <li class="form-group-item">
                   <a href=""><img src="image/dribbble_icon.png" alt="" /></a>
                 </li>
-                <li>
+                <li class="form-group-item">
                   <a href=""><img src="image/behance_icon.png" alt="" /></a>
                 </li>
               </ul>
@@ -842,11 +887,10 @@
 
     <footer>
       <div class="container">
-        <p>@ 2015 COPYRIGHT DESIGN STUDIO</p>
+        <small>@ 2015 COPYRIGHT DESIGN STUDIO</small>
         <p>DESIGNED BY <strong>SYMU</strong><span>.</span>CO</p>
       </div>
     </footer>
   </body>
-  <script type="text/javascript" src="js/owl.carousel.js"></script>
-  <script src="js/main.js"></script>
+
 </html>

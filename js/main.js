@@ -1,6 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  new Mmenu("#menu", {
-    extensions: ["position-front", "position-right"],
+$(function () {
+  $(".open-menu").click(function () {
+    document.getElementsByClassName("menu-mobile")[0].style.width = "70%";
+  });
+});
+
+$(function () {
+  $(".close-menu").click(function () {
+    document.getElementsByClassName("menu-mobile")[0].style.width = "0%";
   });
 });
 
@@ -14,7 +20,7 @@ const scrollDown = () => {
 };
 
 $(document).ready(function () {
-  $(".members .owl-carousel").owlCarousel({
+  $(".section-members .owl-carousel").owlCarousel({
     loop: true,
     dots: false,
     responsive: {
@@ -34,16 +40,19 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".our-team .owl-carousel").owlCarousel({
+  $(".section-our-team .owl-carousel").owlCarousel({
     loop: true,
     dots: true,
     nav: false,
-    margin: 55,
+    margin: 40,
     responsive: {
       0: {
         items: 1,
       },
-      600: {
+      425: {
+        items: 2,
+      },
+      768: {
         items: 2,
       },
       1000: {
